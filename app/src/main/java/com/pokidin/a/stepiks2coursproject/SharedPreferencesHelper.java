@@ -5,13 +5,13 @@ import android.content.SharedPreferences;
 
 public class SharedPreferencesHelper {
 
-    public static final String PREFERENCES_NAME = "SHARED_PREF_NAME";
-    public static final String PREFERENCES_KEY = "PREFERENCES_KEY";
+    private static final String PREFERENCES_NAME = "SHARED_PREF_NAME";
+    private static final String PREFERENCES_KEY = "PREFERENCES_KEY";
 
 
     private SharedPreferences mSharedPreferences;
 
-    public SharedPreferencesHelper(Context context){
+    SharedPreferencesHelper(Context context){
         mSharedPreferences = context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 
