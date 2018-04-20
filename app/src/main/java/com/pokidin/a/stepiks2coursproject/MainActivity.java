@@ -46,6 +46,7 @@ public class MainActivity extends SingleFragmentActivity {
                 break;
             case R.id.exit_case:
                 Toast.makeText(this, R.string.exit, Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             default:
                 break;

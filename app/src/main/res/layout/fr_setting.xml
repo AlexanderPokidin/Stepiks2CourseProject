@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <RadioGroup
         android:id="@+id/rgSearch"
@@ -11,24 +12,23 @@
 
         <RadioButton
             android:id="@+id/rbGoogle"
-            android:text="@string/google"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/google" />
 
         <RadioButton
             android:id="@+id/rbYandex"
-            android:text="@string/yandex"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/yandex" />
 
         <RadioButton
-            android:id="@+id/rbYahoo"
-            android:text="@string/yahoo"
+            android:id="@+id/rbBing"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/bing" />
 
     </RadioGroup>
-
 
 
 </LinearLayout>
