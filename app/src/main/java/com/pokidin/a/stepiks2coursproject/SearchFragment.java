@@ -31,7 +31,7 @@ public class SearchFragment extends Fragment {
             String searchWord = mSharedPreferencesHelper.getFromPreferences();
             String uriWord = searchWord + mSearchText.getText().toString();
 
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uriWord)); //todo
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uriWord));
             startActivity(intent);
         }
     };

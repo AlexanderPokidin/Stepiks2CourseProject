@@ -8,10 +8,9 @@ public class SharedPreferencesHelper {
     private static final String PREFERENCES_NAME = "SHARED_PREF_NAME";
     private static final String PREFERENCES_KEY = "PREFERENCES_KEY";
 
-
     private SharedPreferences mSharedPreferences;
 
-    SharedPreferencesHelper(Context context){
+    SharedPreferencesHelper(Context context) {
         mSharedPreferences = context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 
@@ -21,8 +20,7 @@ public class SharedPreferencesHelper {
         editor.apply();
     }
 
-    public String getFromPreferences(){
+    public String getFromPreferences() {
         return mSharedPreferences.getString(PREFERENCES_KEY, "");
     }
-
 }
